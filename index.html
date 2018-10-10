@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 
 
-    <title>Plus ou Moins</title>
-</head>
+        <title>Plus ou Moins</title>
+    </head>
 
-<body>
-    <header>
-        <h1>Plus ou Moins</h1>
-    </header>
-    <div class=container-fluid >
-
-    <div class=jeu>Règles du jeu</div>
-<p class="text-center m_5"> 
-Devine un nombre entre 0 et 99. Tu peux essayer 10 fois.</p>
-
-    <input class="p-1 mt-4 mb-4" type="text" id="answer" maxlength="2">
-    <div type="text" id="message"></div>
-
-    <button type="submit" id=btn class="mt-4 btn btn-primary btn-lg">OK</button>
-    <div id=essais></div>
-
+    <body>
+        <div class=container-fluid>
+            <header>
+                <img src="media/plus.png" alt="boutton plus" class="plus">
+                <h1>Plus ou Moins</h1>
+                <img src="media/moins.png" alt="boutton moins" class="moins">
+            </header>
+                <div class=jeu>Règles du jeu</div>
+                <p class="text-center m_5">Devine un nombre entre 0 et 99. Tu peux essayer 10 fois.</p>
+                <div class="row">
+                    <div class="col-12 col-lg-4 text-center" type="text" id="message"></div>
+<div class="col-12 col-lg-4 justify-content-center d-flex">
+                    <input class="mt-4 mb-1 pb-1" type="text" id="answer" maxlength="2">
+                <br>
+                        <button type="submit" id=btn class="mt-4 btn btn-primary">OK</button>
 </div>
+                   
+<div class="col-12 col-lg-4 text-center" id=essais>
+                    </div>
+
+
+          
+
+            </div>
+
+
+        </div>
 
 
 
@@ -44,12 +53,14 @@ Devine un nombre entre 0 et 99. Tu peux essayer 10 fois.</p>
 
 
 
-  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="app.js"></script>
+    </body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="app.js"></script>
-</body>
 </html>

@@ -2,6 +2,10 @@ body {
     background-color: darkblue;
 }
 
+header {
+    position: relative;
+}
+
 h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,7 +18,7 @@ h1 {
 }
 p{
     color: antiquewhite;
-    margin-top: 10px;
+    margin-top: 2%;
 
     border:5px;
     border-color: antiquewhite;
@@ -24,25 +28,35 @@ p{
     color: antiquewhite;
     display: flex;
     justify-content: space-around;
-    padding: 2px;
+    padding: 50px;
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 30px;
     
 }
+
 
 #message {
     color: aliceblue;
     font-size: 30px;
+  
+}
+
+#answer {
+padding: 1%!important;
+    font-size: 30px;
+    width: 20%;
 }
 #essais {
     color: aliceblue;
     font-size: 30px;
+
 }
 
 .btn {
     background-color: chocolate;
     border-color: chocolate;
-    width: 5%;
+    width: 20%;
+    margin-left:4%;
 
 }
 
@@ -58,4 +72,16 @@ p{
 
 .swal-button:onclick {
     background-color: rgb(245, 123, 37);
+}
+
+.plus{
+    position: absolute;
+    width: 5%;
+    left: 20rem;
+}
+.moins {
+    position: absolute;
+    width: 5%;
+    right: 20rem;
+    top:0;
 }
