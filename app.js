@@ -64,6 +64,7 @@ function jeu() {
         input.value = message.innerHTML = essais.innerHTML = "";
         i = 0;
     }
+    
 }
 
 myReset.addEventListener('click', (event) => {
