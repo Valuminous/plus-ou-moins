@@ -13,31 +13,25 @@ myButton.addEventListener('click', (event) => {
     if (regex.test(input.value)){}
         
     else{
-         alert("Ce n'est pas un nombre valide");
+         swal("Ce n'est pas un nombre valide");
          i--;
     }
-       
-    console.log(myButton);
-    console.log(i);
-    console.log(input);
-
-    if (i == 3) {
-        alert("salut");
-        window.location.reload();
-        input.value = "";
-    }
-    if (input.value == random) {
-        alert("Bravo");
-        input.value="";
-    } else if (input.value < random) {
-        alert("plus");
-        input.value="";
-    } else if (input.value > random) {
-        alert("moins");
-        input.value="";
-    }
-     if (i == 4) {
-         alert("salut");
-         i=0;
-     }
-})
+         console.log(random);
+         console.log(myButton);
+         console.log(i);
+         console.log(input);
+         if (input.value == random) {
+             swal("Bravo !!");
+             input.value = "";
+         } else if (input.value < random) {
+             message.innerHTML = ("plus de " + input.value);
+             input.value = "";
+         } else if (input.value > random) {
+             message.innerHTML = ("moins de " + input.value);
+             input.value = "";
+         }
+         if (i == 10) {
+             swal("Perdu !!");
+             i = 0;
+         }
+     })
