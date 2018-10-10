@@ -8,9 +8,13 @@ const myReset = document.querySelector('#reset');
 let i = 0;
 let regex = /^\d+$/;
 
+window.onload = () => {
+    input.focus();
+}
+
 
 function randomNumber(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
+    return Math.round(Math.random()*(max - min) + min);
 }
 
 
@@ -30,7 +34,7 @@ function jeu() {
     if (regex.test(input.value)) {} else {
         swal("Ce n'est pas un nombre valide");
         i--;
-        input.value = message = "";
+        input.value = message.innerHTML = "";
     }
     console.log(random);
     console.log(myButton);
