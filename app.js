@@ -1,27 +1,43 @@
-const random = Math.round(Math.random() * 100);
+const random = Math.floor(Math.random() * 100);
 const myButton = document.querySelector('.btn');
 var message = document.querySelector('#message');
 var input = document.querySelector('#answer');
 var i = 0;
 
+
+ var regex = /^\d+$/;
+
 myButton.addEventListener('click', (event) => {
     i++;
-    console.log(random);
+   
+    if (regex.test(input.value)){}
+        
+    else{
+         alert("Ce n'est pas un nombre valide");
+         i--;
+    }
+       
     console.log(myButton);
     console.log(i);
     console.log(input);
+
+    if (i == 3) {
+        alert("salut");
+        window.location.reload();
+        input.value = "";
+    }
     if (input.value == random) {
-        swal("Bravo !!");
+        alert("Bravo");
         input.value="";
     } else if (input.value < random) {
-         message.innerHTML=("plus de " + input.value);
+        alert("plus");
         input.value="";
     } else if (input.value > random) {
-        message.innerHTML = ("moins de " + input.value);
+        alert("moins");
         input.value="";
     }
-     if (i == 10) {
-         swal("Perdu !!");
+     if (i == 4) {
+         alert("salut");
          i=0;
      }
 })
