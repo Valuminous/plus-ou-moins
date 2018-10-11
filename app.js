@@ -71,10 +71,8 @@ function jeuHard() {
             input.value = message.innerHTML = "";
         }
         console.log(random);
-        console.log(myButton);
         console.log(i);
-        console.log(input);
-        console.log(answer1);
+  
         if (input.value == random) {
             swal("Bravo !!");
             input.value = message.innerHTML = essais.innerHTML = "";
@@ -131,10 +129,8 @@ function jeuNormal() {
             input.value = message.innerHTML = "";
         }
         console.log(random);
-        console.log(myButton);
         console.log(i);
-        console.log(input);
-        console.log(answer1);
+   
         if (input.value == random) {
             swal("Bravo !!");
             input.value = message.innerHTML = essais.innerHTML = "";
@@ -199,26 +195,36 @@ function jeuEasy() {
 
         } else if (input.value < random) {
             message.innerHTML = ("C'est plus de " + input.value + "!");
-            if (i == 1) { answer1.innerHTML = input.value;
+            if (i == 1) {
+                answer1.innerHTML = input.value;
             }
-            if (i == 2) { answer2.innerHTML = input.value;
-            } 
-            if (i == 3) { answer3.innerHTML = input.value;
+            if (i == 2) {
+                answer2.innerHTML = input.value;
             }
-            if (i == 4) { answer4.innerHTML = input.value;
-            } 
-            if (i == 5) { answer5.innerHTML = input.value;
+            if (i == 3) {
+                answer3.innerHTML = input.value;
             }
-            if (i == 6) { answer6.innerHTML = input.value;
-            } 
-            if (i == 7) { answer7.innerHTML = input.value;
+            if (i == 4) {
+                answer4.innerHTML = input.value;
             }
-            if (i == 8) { answer8.innerHTML = input.value;
-            } 
-            if (i == 9) { answer9.innerHTML = input.value;
+            if (i == 5) {
+                answer5.innerHTML = input.value;
             }
-            if (i == 10) { answer10.innerHTML = input.value;
-            } 
+            if (i == 6) {
+                answer6.innerHTML = input.value;
+            }
+            if (i == 7) {
+                answer7.innerHTML = input.value;
+            }
+            if (i == 8) {
+                answer8.innerHTML = input.value;
+            }
+            if (i == 9) {
+                answer9.innerHTML = input.value;
+            }
+            if (i == 10) {
+                answer10.innerHTML = input.value;
+            }
             input.value = "";
             essais.innerHTML = ("Il te reste encore " + [10 - i] + " essais.");
             if (i == 9) {
@@ -226,26 +232,36 @@ function jeuEasy() {
             }
         } else if (input.value > random) {
             message.innerHTML = ("C'est moins de " + input.value + "!");
-            if (i == 1) { answer1.innerHTML = input.value;
+            if (i == 1) {
+                answer1.innerHTML = input.value;
             }
-            if (i == 2) { answer2.innerHTML = input.value;
-            } 
-            if (i == 3) { answer3.innerHTML = input.value;
+            if (i == 2) {
+                answer2.innerHTML = input.value;
             }
-            if (i == 4) { answer4.innerHTML = input.value;
-            } 
-            if (i == 5) { answer5.innerHTML = input.value;
+            if (i == 3) {
+                answer3.innerHTML = input.value;
             }
-            if (i == 6) { answer6.innerHTML = input.value;
-            } 
-            if (i == 7) { answer7.innerHTML = input.value;
+            if (i == 4) {
+                answer4.innerHTML = input.value;
             }
-            if (i == 8) { answer8.innerHTML = input.value;
-            } 
-            if (i == 9) { answer9.innerHTML = input.value;
+            if (i == 5) {
+                answer5.innerHTML = input.value;
             }
-            if (i == 10) { answer10.innerHTML = input.value;
-            } 
+            if (i == 6) {
+                answer6.innerHTML = input.value;
+            }
+            if (i == 7) {
+                answer7.innerHTML = input.value;
+            }
+            if (i == 8) {
+                answer8.innerHTML = input.value;
+            }
+            if (i == 9) {
+                answer9.innerHTML = input.value;
+            }
+            if (i == 10) {
+                answer10.innerHTML = input.value;
+            }
             input.value = "";
             essais.innerHTML = ("Il te reste encore " + [10 - i] + " essais.");
             if (i == 9) {
@@ -257,6 +273,6 @@ function jeuEasy() {
             input.value = message.innerHTML = essais.innerHTML = "";
             i = 0;
             random = randomNumber(0, 100);
-        }       
-}
+        }
+    }
 }
