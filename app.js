@@ -35,14 +35,17 @@ function randomNumber(min, max) {
 
 
 hard.addEventListener('click', (event) => {
+    window.location.reload();
     jeuHard();
 })
 
 normal.addEventListener('click', (event) => {
+    window.location.reload();
     jeuNormal();
 })
 
 easy.addEventListener('click', (event) => {
+    window.location.reload();
     jeuEasy();
 })
 
