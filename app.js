@@ -18,11 +18,7 @@ function randomNumber(min, max) {
 }
 
 
-window.addEventListener('keydown', function (e) {
-    if (e.keyCode === 13) {
-        jeu();
-    }
-})
+
 
 
 myButton.addEventListener('click', (event) => {
@@ -30,6 +26,11 @@ myButton.addEventListener('click', (event) => {
 })
 
 function jeu() {
+    window.addEventListener('keydown', function (e) {
+    if (e.keyCode === 13) {
+        jeu();
+    }
+})
     i++;
     if (regex.test(input.value)) {} else {
         swal("Ce n'est pas un nombre valide");
@@ -70,3 +71,4 @@ function jeu() {
 myReset.addEventListener('click', (event) => {
     window.location.reload();
 })
+
