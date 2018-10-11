@@ -20,25 +20,44 @@
             <h1>Plus ou Moins</h1>
             <img src="media/moins.png" alt="boutton moins" class="moins">
         </header>
-        <div class=jeu>Règles du jeu
+        <div class="jeu">Règles du jeu
         </div>
-        <p class="text-center m_5">Devine un nombre entre 0 et 99. Tu peux essayer 10 fois.</p>
+        <!-- <p class="text-center">Devine un nombre entre 0 et 99. Tu peux essayer 10 fois. Choisis d'abord la difficulté.</p> -->
+
+        <div class="difficulty">
+            <button type="submit" id="easy" class="easy btn btn-primary" alt="Les numéros choisis restent visibles durant le jeu.">Easy</button>
+            <button type="submit" id="normal" class="normal btn btn-primary">Normal</button>
+            <button type="submit" id="hard" class="hard btn btn-primary">Hard</button>
+        </div>
         <div class="row">
             <div class="col-12 col-lg-4 text-center" type="text" id="message">
             </div>
             <div class="col-12 col-lg-4 justify-content-center d-flex">
                 <input class="mt-4 mb-1 pb-1" type="text" id="answer" maxlength="2">
                 <br>
-                <button type="submit" id=btn class="mt-4 btn btn-primary">OK</button>
+                <button type="submit" id="btn" class="mt-4 btn btn-primary btnok">OK</button>
 
             </div>
 
-            <div class="col-12 col-lg-4 text-center" id=essais>
+            <div class="col-12 col-lg-4 text-center" id="essais">
             </div>
         </div>
-    </div>
-    <div class="reset">
-        <button type="submit" class="mt-4 btn-primary" id="reset">Reset</button>
+
+        <div class="reset">
+            <button type="submit" class="mt-4 btn-primary" id="reset">Reset</button>
+        </div>
+        <div class="answerbuttons">
+            <div class="answer1" id="answer1">coucou</div>
+            <div class="answer1" id="answer2"></div>
+            <div class="answer1" id="answer3"></div>
+            <div class="answer1" id="answer4"></div>
+            <div class="answer1" id="answer5"></div>
+            <div class="answer1" id="answer6"></div>
+            <div class="answer1" id="answer7"></div>
+            <div class="answer1" id="answer8"></div>
+            <div class="answer1" id="answer9"></div>
+            <div class="answer1" id="answer10"></div>
+        </div>
     </div>
 
 

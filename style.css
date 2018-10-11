@@ -1,3 +1,4 @@
+/* basic formatting */
 body {
     background-color: darkblue;
 }
@@ -16,11 +17,11 @@ h1 {
     color-interpolation-filters: linearRGB;
     margin-top: 40px;
 }
-p{
+
+p {
     color: antiquewhite;
     margin-top: 2%;
-
-    border:5px;
+    border: 5px;
     border-color: antiquewhite;
 }
 
@@ -31,44 +32,54 @@ p{
     padding: 50px;
     margin-top: 50px;
     font-size: 30px;
-    
+
 }
 
-
+/* js generated messages */
 #message {
     color: aliceblue;
     font-size: 30px;
-  
+
 }
 
 #answer {
-padding: 1%!important;
+    padding: 1% !important;
     font-size: 30px;
     width: 20%;
 }
+
 #essais {
     color: aliceblue;
     font-size: 30px;
 
 }
-#reset{
-     width: 4em;
-     height: 4em;
-     border-radius: 60%;
-     border:2px;
+
+/* reset button */
+#reset {
+    width: 4em;
+    height: 4em;
+    border-radius: 60%;
+    border: 2px;
 
 }
-.reset{   
-    margin-top: 7%;
-     display: flex;
-     justify-content: center;
+
+.reset {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+
 }
 
+/* OK button */
 .btn {
     background-color: chocolate;
     border-color: chocolate;
-    width: 20%;
-    margin-left:4%;
+    margin-left: 4%;
+
+}
+.btnok {
+    width: 12%;
 
 }
 
@@ -78,6 +89,7 @@ padding: 1%!important;
 
 }
 
+/* pop-ups */
 .swal-button {
     background-color: rgb(245, 123, 37);
 }
@@ -86,14 +98,50 @@ padding: 1%!important;
     background-color: rgb(245, 123, 37);
 }
 
-.plus{
+/* header signs */
+.plus {
     position: absolute;
     width: 5%;
     left: 20rem;
 }
+
 .moins {
     position: absolute;
     width: 5%;
     right: 20rem;
-    top:0;
+    top: 0;
+}
+/* difficulty buttons */
+
+.difficulty {
+    margin-top: 2%;
+    margin-bottom:2%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.easy normal hard {
+   width: 7% !important;
+
+}
+
+/* numbers guessed */
+
+.answerbuttons {
+    display: flex;
+justify-content: space-around;
+
+
+}
+
+
+.answer1 {
+    color: white;
+    font-size: 20px;
+    background: rgb(209, 30, 30);
+    height:30px !important;
+    width:30px !important;
+    padding: 30px !important;
+
 }
