@@ -2,12 +2,12 @@ let random = randomNumber(0, 100);
 const myButton = document.querySelector('#btn');
 const message = document.querySelector('#message');
 const essais = document.querySelector("#essais");
-const input = document.querySelector('#answer');
+const input = document.querySelector('#input');
 const myReset = document.querySelector('#reset');
-const answer1 = document.querySelector('#answer1');
 const easy = document.querySelector('#easy');
 const normal = document.querySelector('#normal');
 const hard = document.querySelector('#hard');
+const answer1 = document.querySelector('#answer1');
 const answer2 = document.querySelector('#answer2');
 const answer3 = document.querySelector('#answer3');
 const answer4 = document.querySelector('#answer4');
@@ -20,8 +20,7 @@ const answer10 = document.querySelector('#answer10');
 
 
 
-
-
+let answers = document.querySelectorAll('#answer');
 let i = 0;
 let regex = /^\d+$/;
 
@@ -66,15 +65,15 @@ function jeuHard() {
     function jeu() {
         i++;
         if (regex.test(input.value)) {} else {
-            swal("Ce n'est pas un nombre valide");
+            alert("Ce n'est pas un nombre valide");
             i--;
             input.value = message.innerHTML = "";
         }
         console.log(random);
         console.log(i);
-  
+
         if (input.value == random) {
-            swal("Bravo !!");
+            alert("Bravo !!");
             input.value = message.innerHTML = essais.innerHTML = "";
             i = 0;
             random = randomNumber(0, 100);
@@ -96,7 +95,7 @@ function jeuHard() {
             }
         }
         if (i == 10) {
-            swal("Perdu !!");
+            alert("Perdu !!");
             input.value = message.innerHTML = essais.innerHTML = "";
             i = 0;
             random = randomNumber(0, 100);
@@ -124,15 +123,15 @@ function jeuNormal() {
     function jeuN() {
         i++;
         if (regex.test(input.value)) {} else {
-            swal("Ce n'est pas un nombre valide");
+            alert("Ce n'est pas un nombre valide");
             i--;
             input.value = message.innerHTML = "";
         }
         console.log(random);
         console.log(i);
-   
+
         if (input.value == random) {
-            swal("Bravo !!");
+            alert("Bravo !!");
             input.value = message.innerHTML = essais.innerHTML = "";
             i = 0;
             random = randomNumber(0, 100);
@@ -154,7 +153,7 @@ function jeuNormal() {
             }
         }
         if (i == 10) {
-            swal("Perdu !!");
+            alert("Perdu !!");
             input.value = message.innerHTML = essais.innerHTML = "";
             i = 0;
             random = randomNumber(0, 100);
@@ -187,8 +186,8 @@ function jeuEasy() {
         console.log(random);
         console.log(i);
         if (input.value == random) {
-            swal("Bravo !!");
-            input.value = message.innerHTML = essais.innerHTML = "";
+            alert("Bravo !!");
+            input.value = message.innerHTML = essais.innerHTML = answer1.innerHTML = answer2.innerHTML = answer3.innerHTML = answer4.innerHTML = answer5.innerHTML = answer6.innerHTML = answer7.innerHTML = answer8.innerHTML = answer9.innerHTML = answer10.innerHTML = "";
             i = 0;
             random = randomNumber(0, 100);
             input.focus();
@@ -269,8 +268,9 @@ function jeuEasy() {
             }
         }
         if (i == 10) {
-            swal("Perdu !!");
-            input.value = message.innerHTML = essais.innerHTML = "";
+            alert("Perdu !!");
+            input.value = message.innerHTML = essais.innerHTML = answer1.innerHTML = answer2.innerHTML = answer3.innerHTML = answer4.innerHTML = answer5.innerHTML = answer6.innerHTML = answer7.innerHTML = answer8.innerHTML = answer9.innerHTML = answer10.innerHTML = "";
+            "";
             i = 0;
             random = randomNumber(0, 100);
         }

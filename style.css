@@ -29,8 +29,8 @@ p {
     color: antiquewhite;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 40px;
     font-size: 30px;
 
 }
@@ -132,16 +132,12 @@ p {
     display: flex;
 justify-content: space-around;
 
-
 }
 
 
 .answer1 {
     color: white;
-    font-size: 20px;
-    background: rgb(209, 30, 30);
-    height:30px !important;
-    width:30px !important;
-    padding: 30px !important;
+    font-size: 50px;
+   
 
 }
